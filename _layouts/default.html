@@ -12,26 +12,30 @@
     <body>
 
         <div class="everything">
-            <div class="header">
-              <header><a href="/">{{ site.name }}</a></header>
-            </div>
 
-            <div class="section_wrap">
-              <div class="section left">
-                {{ content }}
-                </article>
-              </div>
-
-              <div class="section right">
-                <article>
-                  <p>
-                    <a href="http://github.com/manpages/">GitHub<a><br />
-                    <a href="http://twitter.com/podmostom/">Twitter</a><br />
-                  </p>
-                </article>
-              </div>
-            </div>
+          <div class="header">
+            <header>
+              def <a href="/">{{ site.name }}</a>() do
+              {:ok, <a href="/atom.xml">rss</a>}
+              end
+            </header>
           </div>
+
+          <div class="section_wrap">
+            <div class="section left">
+              {{ content }}
+            </div>
+
+            <div class="section right">
+              <article>
+                <p>
+                  <a href="http://github.com/manpages/">GitHub</a><br />
+                  <a href="http://twitter.com/podmostom/">Twitter</a><br />
+                </p>
+              </article>
+            </div> <!-- /section -->
+          </div> <!-- /wrap -->
+
         </div> <!-- /container -->
 
     </body>

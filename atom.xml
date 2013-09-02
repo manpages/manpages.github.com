@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+{% if site.source == '/home/sweater/blog' %}
+  {% assign domain = 'new.memorici.de' %}
+{% else %}
+  {% assign domain = 'manpages.github.io' %}
+{% endif %}
+ <title>{{ site.title }}</title>
+ <link href="http://{{domain}}/atom.xml" rel="self"/>
+ <link href="http://{{domain}}/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://{{domain}}/</id>
+ <author>
+   <name>Jonn Mostovoy</name>
+   <email>jm@memorici.de</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://{{domain}}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://{{ domain }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
