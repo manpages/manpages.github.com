@@ -1,0 +1,109 @@
+/* Global Reset, Solarized */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+  background-color: #002b36;
+  color: #fdf6e3;
+}
+
+a         { color: #eee8d5; }
+a:hover   { color: #eee8d5; }
+a:visited { color: #eee8d5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+/* <3 popoffka */
+
+body {
+  font-family: Ubuntu, sans-serif;
+  font-size: 11pt;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  font-size: 20pt;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.everything {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  border: 1px solid;
+  border-color: #073642 #073642;
+  padding: 3px 3px 3px 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section_wrap {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hideable {
+  display: none;
+}
+
+.toggle {
+  border-bottom: 1px dashed;
+  border-color: #073642 #073642;
+  cursor: pointer;
+}
+
+/* posts */
+
+.highlight pre {
+  text-align: left;
+}
+
+.post {
+  text-align: justify;
+  margin: 5px;
+}
+
+@media all and (min-width: 800px) {
+  .section {
+    float: left;
+  }
+
+  .left {
+    width: 70%;
+  }
+
+  .right {
+    width: 30%;
+  }
+
+  .left article {
+    margin-right: 5px;
+  }
+
+  .right article {
+    margin-left: 5px;
+  }
+}
+@media all and (max-width: 800px) {
+  * {
+    margin: 2px;
+  }
+}
