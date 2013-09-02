@@ -4,13 +4,17 @@ title: memoricide
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <article><p>Blog Posts</p></article>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      <div class="post">
-        {{post.content}}
-      </div>
+    <article>
+      <p>
+        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="post">
+          {{post.content}}
+        </div>
+      </p>
+    </article>
     {% endfor %}
   </ul>
 </div>

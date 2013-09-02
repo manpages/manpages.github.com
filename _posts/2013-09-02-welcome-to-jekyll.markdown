@@ -11,6 +11,10 @@ default, but for now, that's how it is (not that I have written
 anything interesting just yet, so if you hate dark themes, there is no
 reason to read this blog just yet ;-) ).
 
+Also I plan to add two-dimensional filter space instead of tags. This space
+will have two axis — “interestingness” and “geekieness“. When I'm adding this
+thing, I'll explain the idea behind (in case it isn't obvious).
+
 Since March 1st (when I last started a Jekyll blog which was
 ruthlessly destroyed along with a virtual server where it was [hosted][backup])
 some changes occurred in Jekyll, pygments and highlight.js and I
