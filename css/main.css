@@ -39,10 +39,10 @@ header {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-header           { color: #073642; }
-header>a         { color: #657b83; }
-header>a:hover   { color: #657b83; }
-header>a:visited { color: #657b83; }
+header,           .links           { color: #073642; }
+header>a,         .links>a         { color: #657b83; }
+header>a:hover,   .links>a:hover   { color: #657b83; }
+header>a:visited, .links>a:visited { color: #657b83; }
 
 .everything {
   width: 100%;
