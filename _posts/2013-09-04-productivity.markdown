@@ -40,7 +40,7 @@ quite easy. Actually, the only thing I can't do anymore on my laptop
 is rapidly calling someone on Skype or answering a call. To do that I
 need to turn the touchpad on (Skype, srsly, you suck). In fact, Linux
 Skype client sucks so much that to fix poor navigation some cool guys
-wrote [an external tool to fix it][pyimc].
+wrote [an external tool][pyimc].
 
 Anyhow, later on I realized that my old vimrc which consisted of 139
 lines of obscure snippets I was putting there since I was fifteen
