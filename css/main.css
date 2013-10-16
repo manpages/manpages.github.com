@@ -19,6 +19,7 @@ a:hover   { color: #eee8d5; }
 a:visited { color: #eee8d5; }
 
 h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 0 0.2em #fff;
   font-size: 100%; }
 
 h1 { margin-bottom: 1em; }
@@ -39,7 +40,7 @@ header {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-header,           .links           { color: #073642; }
+header,           .links           { color: #657b83; }
 header>a,         .links>a         { color: #657b83; }
 header>a:hover,   .links>a:hover   { color: #657b83; }
 header>a:visited, .links>a:visited { color: #657b83; }
@@ -83,6 +84,11 @@ article {
 .post {
   text-align: justify;
   margin: 5px;
+}
+
+pre { 
+  white-space: pre; 
+  overflow: hidden; 
 }
 
 @media all and (min-width: 800px) {
