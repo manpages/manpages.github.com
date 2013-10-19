@@ -18,10 +18,12 @@ a         { color: #eee8d5; }
 a:hover   { color: #eee8d5; }
 a:visited { color: #eee8d5; }
 
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: 0 0 0.2em #fff;
-  font-size: 100%; }
-
+ul, ol {
+  padding-left: 30px;
+}
+h2, h3, p, ul, ol {
+  margin-left: 5px;
+}
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
