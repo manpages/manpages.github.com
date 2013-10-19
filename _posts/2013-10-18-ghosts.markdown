@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Youth in trouble"
+date:   2013-10-18 19:15:37
+categories: math computers
+---
+
+##Ghost? But we have Jekyll!
+
+Don't get me wrong, I really like [Jekyll](http://jekyllrb.com/) but I want to constantly try some new things, something that's promising and looks awesome. And [ghost](https://en.ghost.org/) definitely looks promising.
+
+It offers us — as creators of content — focus at what's important without the zoo of programming languages (though the main language is kind of meh — javascript via node.js) but it has great potential as a replacement for ugly Wordpress™ that actually makes sense.
+
+Right now it doesn't feel neither bloated with features nor complete, however I clearly have a desire to hack this thing if I have free time in the observable future.
+
+##tohack:
+
+Lists below are sorted lists of my findings and thoughts about ghost usability and feature set. Expect those to grow.
+
+###Bugs it has:
+
+ + Correct representation of inline pictures (see trollface picture below). Brief diagnostics suggest that it's problem with casper (the default ghost theme), not with the engine itself, as the preview gets rendered properly.
+
+ ![preview trollface][trf_prw]
+
+ ![rendered trollface][trf_rnd]
+
+Code to reproduce this bug:
+
+```
+ + Rewrite in Erlang (![trollface](http://sc2tv.ru/chat/trollface.gif))
+```
+
+===
+
+###Usability it lacks:
+
+ + An option to automatically save WebUI-config right after a field is changed in UI.
+ + Default theme should have a button to get back to the list of all posts.
+
+===
+
+###Traits it lacks (ordered by priority, as I see it):
+
+ + Command-line post management
+  + Easy post reading and management from CLI
+  + Git hook for posting
+ + Comments (not a problem for ghost itself, maybe ghost community should think about making “whisper” application that is another server and allows origins from the same host in order to provide disqus-like decentralized commentary management that can easily be plugged in ghost?) 
+ + JSON-based configuration
+ + Syntax highlight for code blocks
+ + Rewrite in Erlang ![trollface][trf]
+
+That's it for now.
+
+You can check out my ghost version of the blog [here](http://new.memorici.de).
+
+[trf_prw]: http://nn.lv/ck0j
+[trf_rnd]: http://nn.lv/krrv
+[trf]:     http://sc2tv.ru/chat/trollface.gif

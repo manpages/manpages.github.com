@@ -1,0 +1,78 @@
+---
+layout: post
+title:  "So much things to say"
+date:   2013-10-16 09:15:37
+categories: math computers
+---
+
+  This post is work in progress. To see only finished posts, please refer to
+manpages.github.io.
+
+  Over the last couple of weeks I've realized that it could be interesting to
+try to run an equivalent of Math and Computer Science Club of Riga in Zagreb.
+
+  So this post is dedicated for some lecture/talk ideas along with short
+descriptions/lecture plans.
+
+#Mathematics
+
+===
+
+###Set theories: going beyond ZF
+
+This talk covers three axiomatic set theories and compares those 
+
+```
+ + ZF
+  + Briefly about AC, ZFC.
+ + NBG
+  + Meta-theory of classes applied to ZF (A. Mostovsky, P. J. Cohen)
+ + Constructive Universes
+  + Grothendieck universes and ZFC
+```
+
+===
+
+###Axiom of choice and the death day
+
+This talk covers several odd properties of using AC in practical deductions.
+
+```
+ + Axiom of choice
+ + Zemerlo's well-ordering theorem
+ + Sages on the death ray
+```
+
+===
+
+###Computers
+
+===
+
+How to stop surfing and start worrying
+---
+
+This talk covers the basic dangers of using the Internet every person should
+understand.
+
+```
+ + Internet 101
+ + SSL 101
+ + MITM 101
+ + Privacy 101
+ + Darknets 101
+```
+
+===
+
+Functional programming 101
+---
+
+Functional programming in Erlang
+---
+
+Functional programming in Haskell
+---
+
+Type systems
+---

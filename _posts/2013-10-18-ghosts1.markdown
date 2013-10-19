@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "Server mansion"
+date:   2013-10-18 20:13:37
+categories: blogging tools
+---
+
+When we enter a haunted mansion, we don't expect to meet ghosts right at it's entrance. If ghosts would live there, all the scary stories would be way less dramatic and teasing.
+
+Pretty much same way, when we interact with a properly configured network architecture, we don't really expect services actually *running* on the router/firewall, right? 
+
+In my home-server-room I have a shorewall host as the router/firewall and some servers running behind it. One of those is the machine that feeds my blog(s) and provide other services that are exposed to the widls to a certain degree. Still, router/firewall is the machine that draws the line of exposure. (Oh, by the way, I should really write a post about the reasons why home routers must die painful death and be replaced with properly configured compyters).
+
+Anyway, when I tried to setup ghost blogging engine on my server, I was a bit confused — I did proxy_pass and... Nothing happened.
+
+Then I read readme and realized that I have to do much more than that (Jekyll was easier to install because it doesn't handle users, maybe ghost can have standalone version with no "users" table and dashboard accessible only from the localhost?).
+
+So, long story short, [here](https://gist.github.com/manpages/7042557) is nginx configuration that works (code listings are also included in the end of the article).
+
+Note that you must tweak your ghost's config.js for it to listen to your LAN ip, not loopback.
+
+Now, in order to get the initial account working and actually post, you have to be in the local network. However it's easily solvable — use -D key of ssh and then proxychains.
+If you have no idea what I just said, here's a short howto:
+
+ 1. Install proxychains:
+ 
+ ``sudo apt-get install proxychains``
+ 
+ 2. you can use my [autossh forwarding wrapper](https://github.com/manpages/tunnel/blob/master/forward) like this (or use ssh -D/autossh manually, but I always keep forgetting the syntax and the keys, so...):
+ 
+ ``forward my.remote.host 9050``
+
+ 3. Now everything is set up for “injecting” your browser into your remote LAN and using ghost dashboard/registering new users/etc!
+ 
+ ``proxychains firefox``
+ 
+ Remember that you have to use the local address of the machine where ghost is running.
+
+
+###NGIИX configuration:
+```
+server 
+{   
+  listen         80; 
+  server_name    new.memorici.de;
+  root /home/ghost/;
+  index index.php;
+
+  location / 
+  {
+    proxy_set_header X-Real-IP  $remote_addr;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header Host $host;
+    proxy_pass http://192.168.1.42:2368;
+  }   
+
+  location ~* \.(?:ico|css|js|gif|jpe?g|png|ttf|woff)$ 
+  {
+    access_log off; 
+    expires 30d;
+    add_header Pragma public
+    add_header Cache-Control "public, mustrevalidate, proxy-revalidate";
+    proxy_pass http://192.168.1.42:2368;
+  }   
+
+  location = /robots.txt  { access_log off; log_not_found off; }
+  location = /favicon.ico { access_log off; log_not_found off; }
+
+  location ~ /\.ht 
+  {
+    deny all;
+  }   
+
+  location /ghost/ 
+  {
+    deny all;
+  }   
+}   
+```
