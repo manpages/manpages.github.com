@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 {% if site.source == '/home/sweater/blog' %}
-  {% assign domain = 'new.memorici.de' %}
+  {% assign domain = 'memorici.de' %}
 {% else %}
   {% assign domain = 'manpages.github.io' %}
 {% endif %}
