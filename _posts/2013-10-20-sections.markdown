@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Blog sections"
+date:   2013-10-20 01:01:01
+categories: short blogging methodology
+---
+
+I really love some blogs, especially those that get updated rarely. For
+instance, [JLOUIS Ramblings](http://jlouisramblings.blogspot.com/) blog is outright awesome.
+
+However some of the blogs that see frequent updates are also very interesting. A
+good example of such a blog can be [eax.me](http://eax.me) (in Russian).
+
+While we can read the blog of Mr. Andersen as a book (in fact, during one of my
+thirty-hour rides from Rīga to Zagreb I was doing that).
+
+On the other hand, if one posts frequently, he or she should really provide a sane
+way of navigation trough the posts. The approaches vary with the most common
+being excessive usage of tags. With tags you can have several "dimensions" of
+tagging — topic, length, interestingness, etc.
+
+However I really like the concept of having sections in one's blog (if one posts
+frequently). An example of this approach — again — is [eax.me](http://eax.me).
+Mr. Alexander Alexeev has the following sections —
+
+ + Sections
+  + Small notes (mostly HOWTOS)
+  + Monthly findings (interesting things found in the Internet)
+ + Implicit sections
+  + Haskell and Template Haskell
+  + Evaluating technology/methodology X
+  + General notes on functional programming
+  + Non-FP-related posts
+
+I would totally steal the “small notes” and “monthly findings” sections, as I
+keep track of those in a google doc anyway (that I access trough GoogleCL... candidate
+for a small note?). I would also make a “progress” section where I'd post
+summaries of proceedings in some of non-work related projects I have. Another
+kind of articles I would like to post can be generalized as “random thoughts”.
+Tpoics such as education (G-d, I want to write a blog post about cascading
+education for such a long time, I'd better not forget that), society,
+technology.
+
+We'll see where it gets, but I'm full of enthusiasm.
+
+Besides, I still need to tweak so much things related to my Jekyll installation —  
+
+ + Display tags
+ + Make /tag/ controller that will filter posts by tag
+ + Implement commentary server
+ + Serve blog using NGIИX
+
+Ah, life is good.

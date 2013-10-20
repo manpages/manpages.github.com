@@ -2,7 +2,7 @@
 layout: post
 title:  "Youth in trouble"
 date:   2013-10-18 19:15:37
-categories: math computers
+categories: blogging tools
 ---
 
 ##Ghost? But we have Jekyll!
