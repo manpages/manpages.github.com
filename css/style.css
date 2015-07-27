@@ -51,5 +51,6 @@ header {
 article {
     text-align: justify;
     margin-bottom: 1em;
-    padding: 2em 4em 2em 4em;
+    padding: 1em 2em 2em 2em;
+    font-size: 17px;
 }
