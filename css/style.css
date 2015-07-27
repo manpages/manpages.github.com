@@ -46,7 +46,9 @@ body {
 header {
     font-family: 'Computer Modern Sans Demi-Condensed';
     font-size: 24px;
+    letter-spacing: 0.0325em;
 }
+
 
 article {
     text-align: justify;
