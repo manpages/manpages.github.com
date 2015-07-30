@@ -50,7 +50,7 @@
   text-transform: uppercase;
   color: white;
   background: #4040c0;
-  height: 10vh;
+  height: 12vh;
   width: 40vw;
   margin-bottom: 4vh;
   font-size: 5vh;
@@ -61,11 +61,11 @@
   font-family: 'Computer Modern Sans Demi-Condensed';
   text-transform: uppercase;
   color: black;
-  height: 10vh;
+  height: 12vh;
   width: 19vw;
   margin-bottom: 4vh;
   margin-right: 1vh;
-  font-size: 1.33vh;
+  font-size: 2.01vh;
   border-radius: 6px;
 }
 
@@ -73,11 +73,11 @@
   font-family: 'Computer Modern Sans Demi-Condensed';
   text-transform: uppercase;
   color: black;
-  height: 10vh;
+  height: 12vh;
   width: 19vw;
   margin-bottom: 4vh;
   margin-left: 1vh;
-  font-size: 1.33vh;
+  font-size: 2.01vh;
   border-radius: 6px;
 }
 
@@ -92,19 +92,16 @@
     padding-top: 10px;
   }
   ._landing_buy_tickets {
-    height: 10vh;
     width: 40vw;
     font-size: 5vw;
   }
   ._landing_submit_talk {
-    height: 10vh;
     width: 19vw;
-    font-size: 1.33vw;
+    font-size: 2.01vw;
   }
   ._landing_become_sponsor {
-    height: 10vh;
     width: 19vw;
-    font-size: 1.33vw;
+    font-size: 2.01vw;
   }
 }
 
@@ -115,18 +112,12 @@
     padding-top: 10px;
   }
   ._landing_buy_tickets {
-    height: 10vh;
-    width: 40vw;
     font-size: 5vw;
   }
   ._landing_submit_talk {
-    height: 10vh;
-    width: 19vw;
-    font-size: 1.33vw;
+    font-size: 2.01vw;
   }
   ._landing_become_sponsor {
-    height: 10vh;
-    width: 19vw;
-    font-size: 1.33vw;
+    font-size: 2.01vw;
   }
 }
