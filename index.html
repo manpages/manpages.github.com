@@ -12,9 +12,40 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/sh.css" />
+    <link rel="stylesheet" href="css/landing.css" />
     <link rel="icon"       href="favicon.gif" />
   </head>
   <body>
+    <div id="landing">
+        <div class="_landing_header">
+          <img class="_landing_logo" src="images/transparentnixvertical.png" />
+          <div class="_landing_logo_hr _landing_bump" /></div>
+        </div>
+        <div class="_landing_text">
+          <div class="_landing_container">
+            <div class="_landing_content">
+              <p>
+                November NN, Awesome Venue,
+              </p>
+              <p>
+                Braghrghaughrthernstraße 666
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="_landing_buttons">
+          <div class="_landing_logo_hr" /></div>
+          <div class="_landing_space">
+             <div>
+               <button class="_landing_buy_tickets">buy tickets</button>
+             </div>
+             <div>
+               <button class="_landing_submit_talk">submit a talk</button>
+               <button class="_landing_become_sponsor">become a sponsor</button>
+             </div>
+           </div>
+        </div>
+    </div>
     <header class="_wrapped _centered">
       <!--nav class="mainNav"-->
 	<ul class="navList _wrapped _centered _flex">
@@ -31,9 +62,20 @@
     </header>
     <div class="_centered _wrapped">
       <article class="_card">
+        <h1>Registration now open!</h1>
+        <p>
+          Registration is now open for NixCon 2015 in Berlin.
+
+          Tickets are available <a href="https://ti.to/nixcon/2015">here</a>.
+        </p>
+        <p>
+          What is NixCon?
+        </p>
+      </article>
+      <article class="_card">
         <p><em>2015-07-14</em></p>
         <p>
-          We are excited to announce preparations for the first Nix conference —	  NixCon 2015.
+          We are excited to announce preparations for the first Nix conference — NixCon 2015.
         </p>
 
         <p>
@@ -80,5 +122,22 @@
         </p>
       </article>
     </div>
+    <script>
+    function jumpDown() {
+      if (document.body.scrollTop > 20) {
+        document.body.scrollTop = window.innerHeight
+        window.removeEventListener('scroll', jumpDown, false)
+        window.addEventListener('scroll', jumpUp, false)
+      }
+    }
+    function jumpUp() {
+      if (document.body.scrollTop < window.innerHeight - 20) {
+        document.body.scrollTop = 0
+        window.removeEventListener('scroll', jumpUp, false)
+        window.addEventListener('scroll', jumpDown, false)
+      }
+    }
+    window.addEventListener('scroll', jumpDown, false)
+    </script>
   </body>
 </html>

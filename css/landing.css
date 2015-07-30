@@ -1,0 +1,113 @@
+#landing {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  width:  100vw;
+  margin: auto;
+  text-align: center;
+}
+
+._landing_logo {
+  height: 25vh;
+}
+
+._landing_logo_hr {
+  border: 0;
+  height: 5px;
+  background: white;
+}
+
+._landing_bump {
+  margin-top: -10px;
+}
+
+._landing_header {
+  padding-top: 2vh;
+  height: 23vh;
+}
+
+._landing_container {
+  display: inline-block;
+}
+
+._landing_content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+._landing_text {
+  padding-top: 10px;
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+._landing_buttons {
+  height: 43vh;
+}
+
+._landing_buy_tickets {
+  font-family: 'Computer Modern Sans Demi-Condensed';
+  text-transform: uppercase;
+  color: white;
+  background: #4040c0;
+  height: 10vh;
+  width: 40vw;
+  margin-bottom: 4vh;
+  font-size: 5vh;
+  border-radius: 6px;
+}
+
+._landing_submit_talk {
+  font-family: 'Computer Modern Sans Demi-Condensed';
+  text-transform: uppercase;
+  color: black;
+  height: 10vh;
+  width: 19vw;
+  margin-bottom: 4vh;
+  margin-right: 1vh;
+  font-size: 1.5vh;
+  border-radius: 6px;
+}
+
+._landing_become_sponsor {
+  font-family: 'Computer Modern Sans Demi-Condensed';
+  text-transform: uppercase;
+  color: black;
+  height: 10vh;
+  width: 19vw;
+  margin-bottom: 4vh;
+  margin-left: 1vh;
+  font-size: 1.5vh;
+  border-radius: 6px;
+}
+
+._landing_space {
+  padding-top: 9vh;
+}
+
+@media (max-width: 900px) {
+  ._landing_text {
+    font-size: 5vw;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  ._landing_buy_tickets {
+    height: 10vh;
+    width: 40vw;
+    font-size: 5vw;
+  }
+
+  ._landing_submit_talk {
+    height: 10vh;
+    width: 19vw;
+    font-size: 1.5vw;
+  }
+
+  ._landing_become_sponsor {
+    height: 10vh;
+    width: 19vw;
+    font-size: 1.5vw;
+  }
+
+}
