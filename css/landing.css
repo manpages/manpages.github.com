@@ -95,15 +95,15 @@
     padding-top: 10px;
   }
   ._landing_buy_tickets {
-    width: 40vw;
+    width: 90vw;
     font-size: 5vw;
   }
   ._landing_submit_talk {
-    width: 19vw;
+    width: 44vw;
     font-size: 2.01vw;
   }
   ._landing_become_sponsor {
-    width: 19vw;
+    width: 44vw;
     font-size: 2.01vw;
   }
 }
