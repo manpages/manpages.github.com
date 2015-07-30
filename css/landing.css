@@ -91,23 +91,42 @@
     font-weight: bold;
     padding-top: 10px;
   }
-
   ._landing_buy_tickets {
     height: 10vh;
     width: 40vw;
     font-size: 5vw;
   }
-
   ._landing_submit_talk {
     height: 10vh;
     width: 19vw;
     font-size: 1.5vw;
   }
-
   ._landing_become_sponsor {
     height: 10vh;
     width: 19vw;
     font-size: 1.33vw;
   }
+}
 
+@media (max-device-aspect-ratio: 5/8) {
+  ._landing_text {
+    font-size: 5vw;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  ._landing_buy_tickets {
+    height: 10vh;
+    width: 40vw;
+    font-size: 5vw;
+  }
+  ._landing_submit_talk {
+    height: 10vh;
+    width: 19vw;
+    font-size: 1.5vw;
+  }
+  ._landing_become_sponsor {
+    height: 10vh;
+    width: 19vw;
+    font-size: 1.33vw;
+  }
 }
