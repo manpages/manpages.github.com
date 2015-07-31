@@ -11,13 +11,16 @@
     vertical-align: middle;
     width: 100vw;
     height: 100vh;
-    background: pink;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: green;
     color: white;
     text-align: center;
 }
 
 #landing_content {
     display: inline-block;
+    background: blue;
 }
 
 
