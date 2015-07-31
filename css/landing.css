@@ -3,6 +3,7 @@
     height: 100vh;
     background: black;
     color: white;
+    margin: auto;
 }
 
 #landing_wrapper {
