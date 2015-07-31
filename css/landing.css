@@ -1,16 +1,24 @@
 #landing {
-    display: table-cell;
     width: 100vw;
     height: 100vh;
     background: black;
     color: white;
-    vertical-align: middle;
-    text-align: center;
 }
 
 #landing_wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+#landing_content {
     display: inline-block;
 }
+
 
 #landing_logo {
   height: 27.41vh;
