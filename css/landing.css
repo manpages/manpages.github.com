@@ -1,99 +1,28 @@
 #landing {
-  color: white;
-  background-color: black;
-  height: 100vh;
-  width:  100vw;
-  margin: auto;
-  text-align: center;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
 }
 
-._landing_logo {
-  height: 20vh;
+#landing_wrapper {
+    display: inline-block;
 }
 
-._landing_logo_hr {
+#landing_logo {
+  height: 27.41vh;
+}
+
+.landing_logo_hr {
   border: 0;
   height: 5px;
   background: white;
+  width: 90vw;
 }
 
-._landing_bump {
+.landing_bump {
   margin-top: -10px;
-}
-
-._landing_header {
-  padding-top: 2vh;
-}
-
-._landing_container {
-  display: inline-block;
-}
-
-._landing_content {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-._landing_text {
-  padding-top: 10px;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-._landing_buttons {
-}
-
-._landing_buy_tickets {
-  font-family: 'Computer Modern Sans Demi-Condensed';
-  text-transform: uppercase;
-  color: white;
-  background: #4040c0;
-  height: 12vh;
-  width: 46vw;
-  margin-bottom: 4vh;
-  font-size: 5vh;
-  border-radius: 6px;
-  border: 0;
-}
-
-._landing_submit_talk {
-  font-family: 'Computer Modern Sans Demi-Condensed';
-  text-transform: uppercase;
-  color: black;
-  height: 12vh;
-  width: 22vw;
-  margin-bottom: 4vh;
-  margin-right: 1vh;
-  font-size: 2.01vh;
-  border-radius: 6px;
-  border: 0;
-}
-
-._landing_become_sponsor {
-  font-family: 'Computer Modern Sans Demi-Condensed';
-  text-transform: uppercase;
-  color: black;
-  height: 12vh;
-  width: 22vw;
-  margin-bottom: 4vh;
-  margin-left: 1vh;
-  font-size: 2.01vh;
-  border-radius: 6px;
-  border: 0;
-}
-
-._landing_space {
-  padding-top: 9vh;
-}
-
-@media (max-width: 900px) {
-  ._landing_buy_tickets {
-    width: 90vw;
-  }
-  ._landing_submit_talk {
-    width: 44vw;
-  }
-  ._landing_become_sponsor {
-    width: 44vw;
-  }
 }
