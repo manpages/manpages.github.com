@@ -26,3 +26,33 @@
 .landing_bump {
   margin-top: -10px;
 }
+
+h1.info {
+  font-size: 5vw;
+}
+
+h1.button {
+  font-size: 6vw;
+}
+h2.button {
+  font-size: 5vw;
+  color: #4040c0;
+}
+
+.button {
+  font-family: 'Computer Modern Sans Demi-Condensed';
+  text-transform: uppercase;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  h1.info {
+    font-size: 5vh;
+  }
+  h1.button {
+    font-size: 6vh;
+  }
+  h2.button {
+    font-size: 5vh;
+  }
+
+}
