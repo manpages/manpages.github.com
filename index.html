@@ -16,36 +16,50 @@
     <link rel="icon"       href="favicon.gif" />
   </head>
   <body>
-    <div id="landing">
-        <div class="_landing_header">
-          <img class="_landing_logo" src="images/transparentnixvertical.png" />
-          <div class="_landing_logo_hr _landing_bump" /></div>
-        </div>
-        <div class="_landing_text">
-          <div class="_landing_container">
-            <div class="_landing_content">
-              <p>
-                November NN, Awesome Venue,
-              </p>
-              <p>
-                Braghrghaughrthernstraße 666
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="_landing_buttons">
-          <div class="_landing_logo_hr" /></div>
-          <div class="_landing_space">
-             <div>
-               <button class="_landing_buy_tickets">buy tickets</button>
-             </div>
-             <div>
-               <button class="_landing_submit_talk"><p>submit</p><p>a talk</p></button>
-               <button class="_landing_become_sponsor"><p>become</p><p>a sponsor</p></button>
-             </div>
-           </div>
-        </div>
+
+<div id="landing">
+
+  <div id="landing_wrapper">
+
+    <div id="landing_content">
+
+    <div class="_landing_header">
+      <img class="_landing_logo" src="images/transparentnixvertical.png" />
+      <div class="_landing_logo_hr _landing_bump" /></div>
     </div>
+
+    <div class="_landing_text">
+      <div class="_landing_container">
+        <div class="_landing_content">
+          <p>
+            November NN, Awesome Venue,
+          </p>
+          <p>
+            Braghrghaughrthernstraße 666
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="_landing_buttons">
+      <div class="_landing_logo_hr" /></div>
+        <div class="_landing_space">
+          <div>
+            <button class="_landing_buy_tickets">buy tickets</button>
+          </div>
+          <div>
+            <button class="_landing_submit_talk"><p>submit</p><p>a talk</p></button>
+            <button class="_landing_become_sponsor"><p>become</p><p>a sponsor</p></button>
+          </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+</div>
+
     <header class="_wrapped _centered">
       <!--nav class="mainNav"-->
 	<ul class="navList _wrapped _centered _flex">
@@ -123,21 +137,27 @@
       </article>
     </div>
     <script>
-    function jumpDown() {
-      if (document.body.scrollTop > 20) {
-        document.body.scrollTop = window.innerHeight
-        window.removeEventListener('scroll', jumpDown, false)
-        window.addEventListener('scroll', jumpUp, false)
+    (function() {
+      function jumpDown() {
+        if (document.body.scrollTop > 20) {
+          document.body.scrollTop = window.innerHeight
+          window.removeEventListener('scroll', jumpDown, false)
+          window.addEventListener('scroll', jumpUp, false)
+        }
       }
-    }
-    function jumpUp() {
-      if (document.body.scrollTop < window.innerHeight - 20) {
-        document.body.scrollTop = 0
-        window.removeEventListener('scroll', jumpUp, false)
+      function jumpUp() {
+        if (document.body.scrollTop < window.innerHeight - 20) {
+          document.body.scrollTop = 0
+          window.removeEventListener('scroll', jumpUp, false)
+          window.addEventListener('scroll', jumpDown, false)
+        }
+      }
+      var landing = document.getElementById('landing')
+      console.log(landing.style)
+      if (landing.style.display !== 'none') {
         window.addEventListener('scroll', jumpDown, false)
       }
-    }
-    window.addEventListener('scroll', jumpDown, false)
+    })()
     </script>
   </body>
 </html>

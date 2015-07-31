@@ -8,7 +8,7 @@
 }
 
 ._landing_logo {
-  height: 25vh;
+  height: 20vh;
 }
 
 ._landing_logo_hr {
@@ -23,7 +23,6 @@
 
 ._landing_header {
   padding-top: 2vh;
-  height: 23vh;
 }
 
 ._landing_container {
@@ -37,12 +36,11 @@
 
 ._landing_text {
   padding-top: 10px;
-  font-size: 5vh;
+  font-size: 2em;
   font-weight: bold;
 }
 
 ._landing_buttons {
-  height: 43vh;
 }
 
 ._landing_buy_tickets {
@@ -89,41 +87,13 @@
 }
 
 @media (max-width: 900px) {
-  ._landing_text {
-    font-size: 5vw;
-    font-weight: bold;
-    padding-top: 10px;
-  }
   ._landing_buy_tickets {
     width: 90vw;
-    font-size: 5vw;
   }
   ._landing_submit_talk {
     width: 44vw;
-    font-size: 2.01vw;
   }
   ._landing_become_sponsor {
     width: 44vw;
-    font-size: 2.01vw;
-  }
-}
-
-@media (max-device-aspect-ratio: 5/8) {
-  ._landing_text {
-    font-size: 5vw;
-    font-weight: bold;
-    padding-top: 10px;
-  }
-  ._landing_buy_tickets {
-    width: 90vw;
-    font-size: 5vw;
-  }
-  ._landing_submit_talk {
-    width: 44vw;
-    font-size: 2.01vw;
-  }
-  ._landing_become_sponsor {
-    width: 44vw;
-    font-size: 2.01vw;
   }
 }
