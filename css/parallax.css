@@ -1,0 +1,72 @@
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--content {
+  transform: translateZ(0);
+}
+.parallax__layer--landing {
+  transform: translateZ(-1px);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.parallax {
+  font-size: 200%;
+}
+
+ /* add some padding to force scrollbars */
+.parallax__layer {
+  padding: 100vh 0;
+}
+
+ /* centre the content in the parallax layers */
+.landing__content {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ /* centre the content in the parallax layers */
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/*****/
+
+body {
+  background: black;
+}
+
+.parallax__layer--landing {
+  color: white;
+}
+
+.content__content {
+  background: white;
+  background-color: white;
+}
+
+.parallax__layer--content {
+  background-color: rgba(215, 44, 44, 0.3);
+  background: rgba(215, 44, 44, 0.3);
+}
