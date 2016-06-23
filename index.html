@@ -1,21 +1,37 @@
----
-layout: default
-title: memoricide
----
-
-<div id="home">
-  <article><p>Blog Posts</p></article>
-  <ul class="posts">
-    {% for post in site.posts %}
-    <article>
-      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-      <div class="post">
-        {{post.content}}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title"     content="NixCon 2015 Berlin" />
+    <meta name="author"    content="Rok Garbas, Paulus Esterhazy, Peter Simons" />
+    <meta name="copyright" content="Public domain" />
+    <title>NixCon 2015 Berlin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/sh.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/parallax.css" />
+    <link rel="icon"       href="favicon.gif" />
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="parallax__layer parallax__layer--landing">
+        <div class="landing__content">
+          <div class="landing__content--line landing__content--bump"></div>
+          <h1 class="landing__content--text">
+            <p>November NN, Awesome Venue,</p>
+            <p>Braghrghaughrthernstraße 666</p>
+          </h1>
+        </div>
       </div>
-    </article>
-    {% endfor %}
-  </ul>
-</div>
-
-<!--
--->
+      <div class="parallax__layer parallax__layer--content">
+        <div class="content__content">
+          <p>Foo bar</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
